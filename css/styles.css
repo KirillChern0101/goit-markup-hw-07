@@ -1,6 +1,9 @@
 /*Preparation START-------------------------------------------------------------------Preparation START*/
-/*Colors START*/
+/*Colors+Animation START*/
 :root {
+	--animation-time: 250ms;
+	--animation-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
 	--accent-text-background-color: #ffffff;
 	--accent-text-color: #2e2f42;
 	--hero-text-color: #ffffff;
@@ -17,11 +20,8 @@
 	--modal-btn-color: #000000;
 	--modal-checkbox-color: #757575;
 	--modal-text-color: #8e8f99;
-
-	--animation-time: 250ms;
-	--animation-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*Colors END*/
+/*Colors+Animation END*/
 
 /*General Setings START*/
 body {
@@ -181,8 +181,6 @@ img {
 	fill: var(--hero-text-color);
 }
 .mobibile-nav .link {
-	transition: color var(--animation-time) var(--animation-cubic);
-
 	display: block;
 
 	color: var(--title-text-color);
@@ -192,6 +190,8 @@ img {
 	line-height: 1.11;
 	letter-spacing: 0.02em;
 	text-decoration-line: none;
+
+	transition: color var(--animation-time) var(--animation-cubic);
 }
 .mobibile-nav .link:hover,
 .mobibile-nav .link:focus {
@@ -209,8 +209,6 @@ img {
 	color: var(--accent-color);
 }
 .ping-mob {
-	transition: color var(--animation-time) var(--animation-cubic);
-
 	color: var(--main-text-color);
 
 	font-style: normal;
@@ -220,6 +218,8 @@ img {
 	letter-spacing: 0.02em;
 
 	text-decoration-line: none;
+
+	transition: color var(--animation-time) var(--animation-cubic);
 }
 .ping-mob.mobil {
 	font-weight: 700;
@@ -270,6 +270,7 @@ img {
 	height: 432px;
 	margin-left: auto;
 	margin-right: auto;
+
 	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 		url(../images/people-office.jpg);
 	background-color: var(--accent-text-color);
@@ -465,14 +466,14 @@ textarea:focus {
 	fill: var(--footer-logo-part);
 }
 textarea {
-	transition: border var(--animation-time) var(--animation-cubic);
-
 	resize: none;
 	width: 100%;
 	min-height: 120px;
 	padding: 8px 16px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+
+	transition: border var(--animation-time) var(--animation-cubic);
 }
 ::placeholder {
 	font-weight: 400;
@@ -490,8 +491,6 @@ textarea {
 	position: absolute;
 }
 .logo-check {
-	transition: background-color var(--animation-time) var(--animation-cubic),
-		border-color var(--animation-time) var(--animation-cubic), fill var(--animation-time) var(--animation-cubic);
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -502,6 +501,9 @@ textarea {
 	border-radius: 2px;
 	margin-right: 8px;
 	cursor: pointer;
+
+	transition: background-color var(--animation-time) var(--animation-cubic),
+		border-color var(--animation-time) var(--animation-cubic), fill var(--animation-time) var(--animation-cubic);
 }
 .check {
 	fill: transparent;
