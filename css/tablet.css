@@ -175,7 +175,7 @@
 		margin-left: auto;
 	}
 	.about-item {
-		padding-right: 500px;
+		display: flex;
 	}
 	.clients-list {
 		max-width: 552px;
