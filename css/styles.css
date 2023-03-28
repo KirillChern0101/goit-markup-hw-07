@@ -57,6 +57,13 @@ img {
 .item-description {
 	margin: 0;
 }
+.skills {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--main-text-color);
+}
 .section-title,
 .section-item {
 	color: var(--title-text-color);
@@ -355,7 +362,9 @@ img {
 
 .modal-close {
 	position: absolute;
-	transition: background-color var(--animation-time) var(--animation-cubic);
+	transition-property: border-color, background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 	display: flex;
 	top: 24px;
