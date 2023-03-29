@@ -69,8 +69,10 @@
 		transition: color var(--animation-time) va(--animation-cubic);
 		color: var(--main-text-color);
 		font-style: normal;
-		font-size: 16px;
-		line-height: 1.5;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 1.17;
+		letter-spacing: 0.04em;
 		text-decoration-line: none;
 	}
 	.header-list-two .ping:hover,
@@ -135,16 +137,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-	.chapter.telephone {
-		margin-top: 10px;
-	}
-	.ping-mob {
-		font-style: normal;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 1.17;
-		letter-spacing: 0.04em;
-	}
 	.about-list.list {
 		flex-wrap: wrap;
 	}

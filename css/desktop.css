@@ -19,6 +19,14 @@
 		letter-spacing: 0.02em;
 		color: var(--main-text-color);
 	}
+	.ping {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+		color: var(--main-text-color);
+	}
 	.section.hero-section {
 		padding-top: 188px;
 		padding-bottom: 188px;
